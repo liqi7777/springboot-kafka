@@ -34,4 +34,11 @@ SpringBoot整合kafka
    打开工具：View->Tool windows->kafkalytic； 
    点击 “+” 号后在弹出框数据：“127.0.0.1:9092” 连接；
 
+## Kafka 命令相关
+1. kafka-topics   --bootstrap-server localhost:9092 --list  列取当前服务端的所有的主题
+2. kafka-topics --create --topic quickstart-events --bootstrap-server localhost:9092 创建quickstart-events主题
+3. kafka-topics --describe --topic quickstart-events --bootstrap-server localhost:9092 显示主题quickstart-events的纤细信息
+
+
+
    
