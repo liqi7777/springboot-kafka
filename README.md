@@ -7,6 +7,7 @@ SpringBoot整合kafka
 2. https://javaguide.cn/high-performance/message-queue/kafka-questions-01.html **Kafka常见问题总结**
 3. https://kafka.apache.org/documentation/ **Kafka 官方文档**
 4. https://github.com/conduktor/kafka-stack-docker-compose **Kafka Docker Compose 启动方式**
+5. https://github.com/Snailclimb/springboot-kafka **JavaGuide SpringBoot 整合kafka的教程**
 
 
 ## IDEA kafka插件相关
