@@ -37,8 +37,10 @@ SpringBoot整合kafka
 
 ## Kafka 命令相关
 1. kafka-topics   --bootstrap-server localhost:9092 --list  列取当前服务端的所有的主题
-2. kafka-topics --create --topic quickstart-events --bootstrap-server localhost:9092 创建quickstart-events主题
-3. kafka-topics --describe --topic quickstart-events --bootstrap-server localhost:9092 显示主题quickstart-events的纤细信息
+2. kafka-topics.sh --describe --topic my-topic --bootstrap-server localhost:9092 描述特定主题
+3. for topic in $(kafka-topics.sh --list --bootstrap-server localhost:9092); do kafka-topics.sh --describe --topic $topic --bootstrap-server localhost:9092; done 检查所有主题及其详细信息
+4. kafka-topics --create --topic quickstart-events --bootstrap-server localhost:9092 创建quickstart-events主题
+5. kafka-topics --describe --topic quickstart-events --bootstrap-server localhost:9092 显示主题quickstart-events的纤细信息
 
 
 
