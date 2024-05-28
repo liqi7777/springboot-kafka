@@ -41,6 +41,8 @@ SpringBoot整合kafka
 3. for topic in $(kafka-topics.sh --list --bootstrap-server localhost:9092); do kafka-topics.sh --describe --topic $topic --bootstrap-server localhost:9092; done 检查所有主题及其详细信息
 4. kafka-topics --create --topic quickstart-events --bootstrap-server localhost:9092 创建quickstart-events主题
 5. kafka-topics --describe --topic quickstart-events --bootstrap-server localhost:9092 显示主题quickstart-events的纤细信息
+6. kafka-consumer-groups --bootstrap-server localhost:9092  --list  列出消费组
+7. kafka-consumer-groups --bootstrap-server localhost:9092 --describe --group KafkaConsumer 描述消费组KafkaConsumer
 
 
 
